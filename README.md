@@ -81,12 +81,14 @@ words.
 the tokenized question. The `set_score3 () ` function computes a score for 
 each paragraph based on the frequency of the word in the paragraph and a 
 scoring mechanism implemented in `calculate_score3 () `.
+![image](https://github.com/user-attachments/assets/6b3a9f70-0474-40f2-92a6-7d256b8ea0d8)
+
 • Heap Construction: A heap (`paraheap`) is constructed to store the top-k 
 paragraphs based on their scores. The top-k paragraphs are identified and 
 added to the heap. The heap maintains the paragraphs with the highest 
 scores.
 • A linked list (`Node` structure) is created from the paragraphs in the heap.
-8) Query Handling: 
+9) Query Handling: 
 The query () method processes user queries, identifying top paragraphs based on 
 the query and the scoring mechanism. The query_llm () method writes relevant 
 information to files, executes a Python script, and manages the interaction with a 
